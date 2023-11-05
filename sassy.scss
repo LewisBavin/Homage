@@ -1,0 +1,50 @@
+
+$themeback1: black;
+$themeback2: rgb(41, 41, 41);
+$themeback3: rgb(90, 90, 90);
+
+$themefront: whitesmoke;
+$themefront: lightgrey;
+
+
+
+@mixin boxtype($class, $prop, $val) {
+      #{$prop}: $val;
+    }
+  
+  .container {
+
+    &.grid{
+        @include boxtype('&', display, grid);
+
+    }
+
+    &.flex{
+        @include boxtype('&', display, flex);
+
+    }
+  }
+
+
+
+
+
+
+
+.container.grid{
+    grid:
+    "banner" 4vh
+    "header" 10vh
+    "content" 40vh
+    "footer" 30vh ;
+
+}
+
+aside{
+    grid-area: banner;
+}
+
+.carousel, .carousel .content{
+    display: flex;
+}
+
