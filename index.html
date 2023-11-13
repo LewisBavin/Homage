@@ -6,26 +6,30 @@
     <title>Document</title>
     <link rel="icon" href="favicon.ico" />
     <link rel=“preload” href="/fonts/MaterialSymbols.woff2" type=“woff2”>
-    <link rel=“preload” href="/fonts/poppins-v20-latin-regular.woff2" type=“woff2”>
-    <link rel=“preload” href="/fonts/poppins-v20-latin-italic.woff2" type=“woff2”>
+    <link rel=“preload” href="/fonts/Poppins-Regular.woff2" type=“woff2”>
+    <link rel=“preload” href="/fonts/Poppins-Italic.woff2" type=“woff2”>
+    <link rel=“preload” href="/fonts/Poppins-Bold.woff2" type=“woff2”>
+    <link rel=“preload” href="/fonts/Monsterat-Regular.woff2" type=“woff2”>
+    <link rel=“preload” href="/fonts/Monsterat-Bold.woff2" type=“woff2”>
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/SASS.css">
 
 </head>
 <body>
     <div class="container body">
-        <header>
+    <header>
             <div class="nav grid">
-                <div class="item1">
-                    <img class="logo" src="/icons/logo.svg">
+                <div class="logo">
+                    <img src="/icons/logo.svg">
                 </div>
 
-                <div class="item2">
-                    <div class="material-symbols">person</div>
+                <div class="account">
+                    <a href="" tabindex="1"><div class="material-symbols">person</div></a>
                 </div>
 
-                <div class="item3">
-                    <div class="basket wrapper">
+                <div class="basket">
+                    <a href="" tabindex="1">
+                        <div class="wrapper">
                         <div class="underlay">
                             <div class="material-symbols">shopping_cart</div>
                         </div>
@@ -35,115 +39,339 @@
                             </div>
                         </div>
                     </div>
+                </a>
                 </div>
 
-                <div class="item4">
-                    <div class="material-symbols">menu</div>
-                </div>
+                <div class="burger">
 
-                <div class="item5 mobile-hidden">
-                    <div class="material-symbols">search</div>
-                    <input type="text" placeholder="Search..">
-                </div>
-                <div class="item6 mobile-hidden flex">
-                    <a href=#>New Arrival</a>
-                    <a href=#>Products</a>
-                    <a href=#>Support</a>
-                    <a href=#>About</a>
-                    <a href=#>Contact</a>
-                </div>
-
-                <div class="item7 mobile-hidden"></div>
-            </div>
-        </header>
-
-        <main>
-            <section id="promotions">
-                --- Promotion Carousel ---
-            </section>
-
-            <section id="main-promotions">
-                <div class="section-header">
-                    <div class="title-decorate">
-                        <h1>This is M-Series</h1>
+                    <div class="ico">
+                        <div class="material-symbols">menu</div>
                     </div>
-                </div>    
-                    <p>Always wanted a premium aluminum keyboard?</p>
-                    <p>Take a look at MonsGeek M Series with different layout choices.</p>
-                    <p>Welcome to the rabbithole!</p>
-                    --- M-series Carousel ---
+
+                    <div class="menu flex">
+                            <div class="item">
+                                <a class="title" href=# tabindex="1">New Arrivals</a>
+                            </div>
+
+                            <div class="item exp">
+                                            <a class="title" href=# tabindex="1">Products</a>
+                                        <div class="menu-nest1 flex">
+                                            <div class="item">
+                                                <a class="title" href="" tabindex="1">M Series</a>
+                                            </div>
+                                            <div class="item">
+                                                <a  class="title" href="" tabindex="1">MG Series</a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="title" href="" tabindex="1">Keycap</a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="title" href="" tabindex="1">Switch</a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="title" href="" tabindex="1">Accessory</a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="title" href="" tabindex="1">Office Supply</a>
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="item exp">
+                                            <a class="title" href=# tabindex="1">Support</a>
+                                        <div class="menu-nest1 flex">
+                                            <div class="item">
+                                                <a class="title" href="" tabindex="1">Track Your Order</a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="title" href="" tabindex="1">Download</a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="title" href="" tabindex="1">QA</a>
+                                            </div>
+                                        </div>
+                            </div>
+                            
+                            <div class="item">
+                                    <a class="title" href=# tabindex="1">About</a>
+                            </div>
+                            
+                            <div class="item">
+                                    <a class="title" href=# tabindex="1">Contact</a>
+                            </div>
+                            
+                            <div class="item">
+                                    <div class="searchbox flex">
+                                        <div class="material-symbols">search</div>
+                                        <input tabindex="1" class="search-bar" type="text" placeholder="Search..">
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </header>
+
+    <main>
+
+            <section id="promotions">
+            
+                <div class="carousel promo" aria-label="Gallery">
+                    <ol class="viewport">
+                      <li id="prom_slide1" tabindex="0" class="slide">
+                        <div class="content">
+                            <div class="product grid">
+                                <div class="img">
+                                    <picture>
+                                        <source media="(min-width: 1100px)" srcset="/imgs/M1-HE-Banner-wide.jpg">
+                                        <img src="/imgs/M1-HE-Banner.jpg">
+                                      </picture>
+                                </div>
+
+                                <div class="link-bubble">
+                                    <a tabindex="18" href="">
+                                        <button class="bubble">
+                                            <div class="content">
+                                                Check More 
+                                            </div>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snapper">
+                          <a href="#prom_slide2" class="prev"></a>
+                          <a href="#prom_slide2" class="next"></a>
+                        </div>
+                      </li>
+        
+                      <li id="prom_slide2" tabindex="0" class="slide">
+                        <div class="content">
+                                <div class="product grid">
+                                    <div class="img">
+                                        <picture>
+                                            <source media="(min-width: 1100px)" srcset="/imgs/M6-banner-2-wide.jpg">
+                                            <img src="/imgs/M6-banner-2.jpg">
+                                          </picture>
+                                    </div>
+
+                                    <div class="link-bubble">
+                                        <a tabindex="19" href="">
+                                            <button class="bubble">
+                                                <div class="content">
+                                                    Check More 
+                                                </div>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="snapper">
+                            <a href="#prom_slide1" class="prev"></a>
+                            <a href="#prom_slide1" class="next"></a>
+                        </div>
+                      </li>
+                    </ol>
+                </div>
                 
             </section>
-            <section id="categories">
+
+            <section class="intro" id="intro">
+
                 <div class="section-header">
-                   <div class="title-decorate">
-                    <h2>Browse Categories</h2>
+                    <div class="decorate">
+                        <h1>This is M Series</h1>
+                    </div>
+                </div>    
+                    <p class="intro">Always wanted a premium aluminum keyboard?</p>
+                    <p class="intro">Take a look at MonsGeek M Series with different layout choices.</p>
+                    
+                    
+            </section>     
+            
+            <section id="monsgeek-video">
+                <h2>Welcome to the rabbithole!</h2>
+                <div class="product-video">
+                    <video  tabindex="20" controls >
+                        <source src="/vids/m1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+            </section>
+                    
+            <section id="highlight">
+                
+                <div class="carousel rabbit" aria-label="Gallery">
+                    <ol class="viewport">
+                      <li id="two_slide1" tabindex="0" class="slide">
+                        <div class="content">
+                            <a href="">
+                                <div class="product grid">
+                                    <div class="title flex">
+                                        <div class="decorate">
+                                            M5 Full-Sized 108-Key
+                                        </div>
+                                        <div class="decoration"></div>
+                                    </div>
+                
+                                    <div class="img">
+                                        <img src="/imgs/108key.jpg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="snapper">
+                          <a href="#two_slide4" class="prev"></a>
+                          <a href="#two_slide2" class="next"></a>
+                        </div>
+                      </li>
+        
+                      <li id="two_slide2" tabindex="0" class="slide">
+                        <div class="content">
+                            <a tabindex="21" href="">
+                                <div class="product grid">
+                                    <div class="title flex">
+                                        <div class="decorate">
+                                            M2 Compact 98-Key
+                                        </div>
+                                        <div class="decoration"></div>
+                                    </div>
+                
+                                    <div class="img">
+                                        <img src="/imgs/98key.jpg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="snapper">
+                            <a href="#two_slide1" class="prev"></a>
+                            <a href="#two_slide3" class="next"></a>
+                        </div>
+                      </li>
+        
+                      <li id="two_slide3" tabindex="0" class="slide">
+                        <div class="content">
+                            <a tabindex="22" href="">
+                                <div class="product grid">
+                                    <div class="title flex">
+                                        <div class="decorate">
+                                            M3 TKL 87-Key
+                                        </div>
+                                        <div class="decoration"></div>
+                                    </div>
+                
+                                    <div class="img">
+                                        <img src="/imgs/87key.jpg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="snapper">
+                            <a href="#two_slide2" class="prev"></a>
+                            <a href="#two_slide4" class="next"></a>
+                        </div>
+                      </li>
+        
+                      <li id="two_slide4" tabindex="0" class="slide">
+                        <div class="content">
+                            <a tabindex="23" href="">
+                                <div class="product grid">
+                                    <div class="title flex">
+                                        <div class="decorate">
+                                            M1/M1W 75% 82-Key
+                                        </div>
+                                        <div class="decoration"></div>
+                                    </div>
+                
+                                    <div class="img">
+                                        <img src="/imgs/82key.jpg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="snapper">
+                            <a href="#two_slide3" class="prev"></a>
+                            <a href="#two_slide1" class="next"></a>
+                        </div>
+                      </li>
+                    </ol>
+                </div>
+
+                
+            </section>
+                
+            
+            <section id="range">
+                <div class="section-header">
+                   <div class="decorate">
+                    <h3>Monsgeek Range</h3>
                    </div>
                 </div>
                     <div class="categories grid">
-                        <div class="category-img">
-                            <img src="/imgs/categories.jpg" alt="">
+                        <div class="img">
+                            <picture>
+                                <source media="(min-width: 1100px)" srcset="/imgs/categories-wide.jpg">
+                                <img src="/imgs/categories.jpg">
+                              </picture>
                         </div>
                         
-                        <div class="category-ico" style="--n: 1">
+                        <div class="ico" style="--n: 1">
                             <img src="/imgs/M-Series-icon.svg" alt="">
                         </div>
-                        <div class="category-link" style="--n: 1">
-                            <a href="">
-                                <button class="link-bubble">
-                                    <div class="bubble-content">
+                        <div class="link-bubble" style="--n: 1">
+                            <a tabindex="24" href="">
+                                <button class="bubble">
+                                    <div class="content">
                                         M-Series
                                     </div>
                                 </button>
                             </a>
                         </div>
 
-                        <div class="category-ico" style="--n: 2">
+                        <div class="ico" style="--n: 2">
                             <img src="/imgs/Mg-Series-icon.svg" alt="">
                         </div>
-                        <div class="category-link" style="--n: 2">
-                            <a href="">
-                                <button class="link-bubble">
-                                    <div class="bubble-content">
+                        <div class="link-bubble" style="--n: 2">
+                            <a tabindex="25" href="">
+                                <button class="bubble">
+                                    <div class="content">
                                         MG-Series
                                     </div>
                                 </button>
                             </a>
                         </div>
 
-                        <div class="category-ico" style="--n: 3">
+                        <div class="ico" style="--n: 3">
                             <img src="/imgs/Switches-icon.svg" alt="">
                         </div>
-                        <div class="category-link" style="--n: 3">
-                            <a href="">
-                                <button class="link-bubble">
-                                    <div class="bubble-content">
+                        <div class="link-bubble" style="--n: 3">
+                            <a tabindex="26" href="">
+                                <button class="bubble">
+                                    <div class="content">
                                         Switches
                                     </div>
                                 </button>
                             </a>
                         </div>
 
-                        <div class="category-ico" style="--n: 4">
+                        <div class="ico" style="--n: 4">
                             <img src="/imgs/Keycaps-icon.svg" alt="">
                         </div>
-                        <div class="category-link" style="--n: 4">
-                            <a href="">
-                                <button class="link-bubble">
-                                    <div class="bubble-content">
+                        <div class="link-bubble" style="--n: 4">
+                            <a tabindex="27" href="">
+                                <button class="bubble">
+                                    <div class="content">
                                         Keycaps
                                     </div>
                                 </button>
                             </a>
                         </div>
 
-                        <div class="category-ico" style="--n: 5">
+                        <div class="ico" style="--n: 5">
                             <img src="/imgs/Accesories-icon.svg" alt="">
                         </div>
-                        <div class="category-link" style="--n: 5">
-                            <a href="">
-                                <button class="link-bubble">
-                                    <div class="bubble-content">
+                        <div class="link-bubble" style="--n: 5">
+                            <a tabindex="28" href="">
+                                <button class="bubble">
+                                    <div class="content">
                                         Accessories
                                     </div>
                                 </button>
@@ -153,35 +381,35 @@
             </section>
             <section id="trending">
                 <div class="section-header">
-                    <div class="title-decorate">
-                        <h2>Browse Trending</h2>
+                    <div class="decorate">
+                        <h3>Trending</h3>
                     </div>
                 </div>
                 <div class="products flex">
 
                     <div class="product grid">
-                        <div class="product-title flex">
-                            <div class="title-decorate">
+                        <div class="title flex">
+                            <div class="decorate">
                                 Best Seller! MonsGeek M1 
                             </div>
-                            <div class="title-decoration"></div>
+                            <div class="decoration"></div>
                         </div>
     
-                        <div class="product-img">
+                        <div class="img">
                             <img src="/imgs/MG-M1_9x4.jpg" alt="">
                         </div>
 
-                        <div class="product-button">
-                            <a href="">
-                                <button class="link-bubble">
-                                    <div class="bubble-content">
+                        <div class="link-bubble">
+                            <a tabindex="25" href="">
+                                <button class="bubble">
+                                    <div class="content">
                                         Check More 
                                     </div>
                                 </button>
                             </a>
                         </div>
     
-                        <div class="product-descr nohover">
+                        <div class="descr nohover">
                             <div class="list">
                                 <ul>
                                     <li>75% 82-Key</li>
@@ -193,37 +421,31 @@
                                 </ul>
                             </div>
                         </div>
-
-                        <div class="product-video">
-                            <video controls>
-                                <source type="mp4" src="https://www.monsgeek.com/wp-content/uploads/2023/06/MonsGeek-M2-Silver.mp4">
-                            </video>
-                        </div>
                     </div>
 
                     <div class="product grid">
-                        <div class="product-title flex">
-                            <div class="title-decorate">
+                        <div class="title flex">
+                            <div class="decorate">
                                 New Arrival! M1 HE Magnetic
                             </div>
-                            <div class="title-decoration"></div>
+                            <div class="decoration"></div>
                         </div>
     
-                        <div class="product-img">
+                        <div class="img">
                             <img src="/imgs/M1-HE_9x4.jpg" alt="">
                         </div>
 
-                        <div class="product-button">
-                            <a href="">
-                                <button class="link-bubble">
-                                    <div class="bubble-content">
+                        <div class="link-bubble">
+                            <a tabindex="26" href="">
+                                <button class="bubble">
+                                    <div class="content">
                                         Check More
                                     </div>
                                 </button>
                             </a>
                         </div>
     
-                        <div class="product-descr nohover">
+                        <div class="descr nohover">
                             <div class="list">
                                 <ul>
                                     <li>75% 82-Key Layout with Knob</li>
@@ -238,28 +460,28 @@
                     </div>
 
                     <div class="product grid">
-                        <div class="product-title flex">
-                            <div class="title-decorate">
+                        <div class="title flex">
+                            <div class="decorate">
                                 New Arrival! M1W Assembled
                             </div>
-                            <div class="title-decoration"></div>
+                            <div class="decoration"></div>
                         </div>
     
-                        <div class="product-img">
+                        <div class="img">
                             <img src="/imgs/M1W_9x4.jpg" alt="">
                         </div>
 
-                        <div class="product-button">
-                            <a href="">
-                                <button class="link-bubble">
-                                    <div class="bubble-content">
+                        <div class="link-bubble">
+                            <a tabindex="27" href="">
+                                <button class="bubble">
+                                    <div class="content">
                                         Check More
                                     </div>
                                 </button>
                             </a>
                         </div>
     
-                        <div class="product-descr nohover">
+                        <div class="descr nohover">
                             <div class="list">
                                 <ul>
                                     <li>75% 82-Key Layout with Knob</li>
@@ -273,28 +495,28 @@
                     </div>
 
                     <div class="product grid">
-                        <div class="product-title flex">
-                            <div class="title-decorate">
+                        <div class="title flex">
+                            <div class="decorate">
                                 New Arrival! MonsGeek M6
                             </div>
-                            <div class="title-decoration"></div>
+                            <div class="decoration"></div>
                         </div>
     
-                        <div class="product-img">
+                        <div class="img">
                             <img src="/imgs/M6_9x4.jpg" alt="">
                         </div>
 
-                        <div class="product-button">
-                            <a href="">
-                                <button class="link-bubble">
-                                    <div class="bubble-content">
+                        <div class="link-bubble">
+                            <a tabindex="28" href="">
+                                <button class="bubble">
+                                    <div class="content">
                                         Check More
                                     </div>
                                 </button>
                             </a>
                         </div>
     
-                        <div class="product-descr nohover">
+                        <div class="descr nohover">
                             <div class="list">
                                 <ul>
                                     <li>65% Alice-layout (Arisu Layout)</li>
@@ -313,77 +535,133 @@
 
             <section id="custom">
                 <div class="section-header">
-                    <div class="title-decorate">
-                        <h2>Customise and Personalise Your Keyboard!</h2>
+                    <div class="decorate">
+                        <h3>Build Your Own</h3>
                     </div>
                 </div>
 
+                <div class="customise">
+                    <div class="img">
+                        <picture>
+                            <source media="(min-width: 1100px)" srcset="/imgs/personalise-wide.png">
+                            <img src="/imgs/personalise.png">
+                          </picture>
+                    </div>
 
+                    <div class="title">
+                            Customise and Personalise Your Keyboard!
+                    </div>
+
+                    <div class="link-bubble">
+                        <a tabindex="29" href="">
+                            <button class="bubble">
+                                <div class="content">
+                                    Start Now!
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </section>
-        
-        </main>
+    </main>
 
-        <aside>
-            <div class="banner">
-                <div class="carousel">
-                    <button class="arrow left">&#60;</button>
-                    <button class="arrow right">&#62;</button>
-                    <div class="slides">
-                        <div class="slide">
-                            <div class="content">
-                                Add on promotion: Save up to 40% OFF on Keysets and Switches with ANY MonsGeek Keyboard
-                            </div>
-                        </div>
-                        <!-- <div class="slide">
-                            <div class="content">
-                                Buy Halloween gift now with up to 20% OFF M6
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="content">
-                                New In! Check out the Magnetic Switch M1W!
-                            </div>
-                        </div> -->
-                    </div>
+    <aside>
+        <div class="carousel banner" aria-label="Gallery">
+            <ol class="viewport">
+              <li id="banner_slide1" tabindex="0" class="slide">
+                <div class="content">
+                    <a href="">Save up to 40% OFF on Keysets and Switches with ANY MonsGeek Keyboard</a>
                 </div>
-            </div>
-        </aside>
+                <div class="snapper">
+                  <a href="#banner_slide4" class="prev"></a>
+                  <a href="#banner_slide2" class="next"></a>
+                </div>
+              </li>
+
+              <li id="banner_slide2" tabindex="0" class="slide">
+                <div class="content">
+                   <a href=""> Buy Halloween gift now with up to 20% OFF M6</a>
+                </div>
+                <div class="snapper">
+                    <a href="#banner_slide1" class="prev"></a>
+                    <a href="#banner_slide3" class="next"></a>
+                </div>
+              </li>
+
+              <li id="banner_slide3" tabindex="0" class="slide">
+                <div class="content">
+                    <a href="">New In! Check out the Magnetic Switch M1W!</a>
+                </div>
+                <div class="snapper">
+                    <a href="#banner_slide2" class="prev"></a>
+                    <a href="#banner_slide4" class="next"></a>
+                </div>
+              </li>
+
+              <li id="banner_slide4" tabindex="0" class="slide">
+                <div class="content">
+                    <a href="">New Arrival: M1 HE Magnetic Switch Keyboard</a>
+                </div>
+                <div class="snapper">
+                    <a href="#banner_slide3" class="prev"></a>
+                    <a href="#banner_slide1" class="next"></a>
+                </div>
+              </li>
+            </ol>
+        </div>
+    </aside>
 
         <footer>
             <div class="socials grid">
-                <div class="title">Follow</div>
-                <img class="logo" src="/icons/logo.svg">
-                <a href=# class="socials-ico flex"><img src="/icons/x.svg"></a>
-                <a href=# class="socials-ico flex"><img src="/icons/instagram.svg"></a>
-                <a href=# class="socials-ico flex"><img src="/icons/facebook.svg"></a>
-                <a href=# class="socials-ico flex"><img src="/icons/discord.svg"></a>            
+                <div class="title">
+                    Follow
+                </div>
+                <div class="img">
+                    <img class="logo" src="/icons/logo.svg">
+                </div>
+                <a tabindex="30" href=# class="ico flex">
+                    <img src="/icons/x.svg">
+                    <p class="name">X</p>
+                </a>    
+                <a tabindex="31" href=# class="ico flex">
+                    <img src="/icons/instagram.svg">
+                    <p class="name">Instagram</p>
+                </a>
+                <a tabindex="32" href=# class="ico flex">
+                    <img src="/icons/facebook.svg">
+                    <p class="name">Facebook</p>
+                </a>
+                <a tabindex="33" href=# class="ico flex">
+                    <img src="/icons/discord.svg">
+                    <p class="name">Discord</p>
+                </a>            
             </div>
 
             <div class="newsletter grid"> 
                 <div class="title">Subscribe to our Newsletter</div>
-                <input class="input-box" type="email" id="email" required placeholder="Email Address">
-                <button class="subscribe-button">SUBSCRIBE</button>
+                <input tabindex="34" class="input-box" type="email" id="email" required placeholder="Email Address">
+                <button tabindex="35"  class="subscribe-button">SUBSCRIBE</button>
                 <div class="subscribe">
-                    <input type="checkbox" id="subscribe-accept" name="subscribe-accept">
-                    <span class="content"><label for="subscribe-accept">Click to accept our Policy</label></span>
+                    <input tabindex="36"  type="checkbox" id="subscribe-accept" name="subscribe-accept">
+                    <span class="content"><label for="subscribe-accept">Click to accept our <a href="">Policy</a></label></span>
                 </div>
             </div>
 
             <div class="affiliates">
                 <div class="title">Programs</div>
                 <div class="content">
-                    <a href="">Affiliate Programs</a>
-                    <a href="">Partner Programs</a>
-                    <a href="">OEM Services</a>
+                    <a tabindex="37" href="">Affiliate Programs</a>
+                    <a tabindex="38" href="">Partner Programs</a>
+                    <a tabindex="39" href="">OEM Services</a>
                 </div>
             </div>
 
             <div class="policies">
                 <div class="terms">
                     <div class="content">
-                        <span><a href="">Warranty Terms</a></span>
-                        <span><a href="">Privacy Policy</a></span>
-                        <span><a href="">Refund Policy</a></span>
+                        <span class="link"><a tabindex="40" href="">Warranty Terms</a></span>
+                        <span class="link"><a tabindex="41" href="">Privacy Policy</a></span>
+                        <span class="link"><a tabindex="42" href="">Refund Policy</a></span>
                     </div>
                 </div>
                 <div class="coppywrite">
